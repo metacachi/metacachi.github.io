@@ -1,0 +1,137 @@
+/*Reset*/
+html, body, h1, h2, h3, h4, h5, h6, p, ol, ul, li, pre, code, address, variable, form, fieldset, blockquote {
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    font-weight: normal;
+    }
+    table { border-collapse: collapse; border-spacing: 0; }
+    td, th, caption { font-weight: normal; text-align: left; }
+    img, fieldset { border: 0; }
+    ol { padding-left: 1.4em; list-style: decimal; }
+    ul { padding-left: 1.4em; list-style:square; }
+    q:before, q:after { content:''; }
+ /*Fin Reset*/
+ 
+  /*FUENTE USADA*/
+  body{font-family: 'Quicksand', sans-serif;}
+  /*CENTRADO Y ANCHO AUTOMATICO A TODA LA PÁGINA*/
+  #contenido{width: 1200px; margin: 0 auto;}
+
+
+  /*FORMATO BARRA DE NAVEGACION*/
+ #barraNav{
+    background-color: grey;
+    height: auto;
+    padding: 10px;
+    width: 100%;
+    margin-left: -11px;
+    display: flex;
+    
+ }
+
+ 
+ .nav-enlace{
+    display: inline-block;
+    background-color: yellowgreen;
+    color: black;
+    padding: 8px 30px;
+
+}
+.nav-enlace:hover{
+    background-color: rgb(208, 247, 131);
+    font-weight:bold;
+   }
+ 
+ /*FORMATO BARRA LATERAL IZQUIERDA*/
+#barraLat{
+    background-color:rgb(111, 0, 255);
+    width: 200px;
+    height: 685px;
+    padding-top: 35px;
+    text-align: center;
+    color: white;
+    float: left;
+  }
+  
+#correo{
+   text-decoration: none;
+   color: white;
+}
+a{
+   text-decoration: none;
+   color: white;
+   font-size: 15px
+}
+img{
+   border-radius: 100%;
+   border:3px solid white;
+}
+#nombre{
+  font-weight:bold;
+  margin-top: 20px;
+  font-size: 36px
+}
+
+  /*FORMATO DEL CONTENIDO*/
+ section{
+   margin-left: 210px;
+   height: 725px;
+ }
+ 
+ th{
+   font-weight:bold;
+   width: 160px;
+   vertical-align: top
+   ;
+ }
+ tr{
+   height: 50px;
+   vertical-align: top
+ }
+ caption{
+   font-weight:bold;
+   font-size: 36px;
+ }
+.empleo{
+   font-weight:bold;
+   font-style: oblique;
+
+}
+
+#comentario{
+  margin-top: 10px;
+  width: 100%;
+  height: 150px;
+  padding: 10px 10px;
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  border-radius: 4px;
+  background-color: #f8f8f8;
+  font-size: 16px;
+  resize: none;
+}
+input{
+  width: 100px;
+  height: 30px;
+  padding: 6px 10px 10px 10px;
+  margin-bottom: 10px;
+}
+
+
+
+ /*FORMATO DEL FOOTER*/
+ footer{
+   font-size: 18px;
+   font-weight:bold;
+   background-color: darkorange;
+
+
+}
+
+@media (max-width:500px){
+  #barraNav{flex-direction: column;margin-top: 400px;}
+  #barraLat{float: top; height: 300px;width: 100%;}
+  section{margin-left: 0px; height: auto;}
+  #contenido{width:auto; margin: auto;}
+}
